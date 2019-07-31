@@ -29,7 +29,6 @@ module.exports = {
   ** Global CSS
   */
   css: [
-	'vuetify/dist/vuetify.min.css',
 	'vuetify-markdown-editor/dist/vuetify-markdown-editor.css'
   ],
 
@@ -37,7 +36,10 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-	'@/plugins/vuetify.js'
+  ],
+
+  devModules: [
+	'@nuxtjs/vuetify'
   ],
 
   /*
