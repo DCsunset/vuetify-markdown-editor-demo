@@ -3,6 +3,10 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+server: {
+	port: 8082,
+	host: 'localhost'
+},
 
   /*
   ** Headers of the page
@@ -16,7 +20,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-	  { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' }
     ]
   },
 
@@ -29,7 +33,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
-	'vuetify-markdown-editor/dist/vuetify-markdown-editor.css'
+    'vuetify-markdown-editor/dist/vuetify-markdown-editor.css'
   ],
 
   /*
@@ -39,7 +43,7 @@ module.exports = {
   ],
 
   devModules: [
-	'@nuxtjs/vuetify'
+    '@nuxtjs/vuetify'
   ],
 
   /*
